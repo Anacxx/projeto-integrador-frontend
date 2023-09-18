@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import axios from 'axios'; // Importe o módulo axios
-import { LikeContainer, PostContainer, StyledP, StyledSpan, Styledh1 } from "./styled";
+import axios from 'axios'; 
+import { LikeContainer, PostContainer, StyledP, StyledSpan } from "./styled";
 import LikeIcon from '../../images/icons/seta-cima-cinza.png';
 import DislikeIcon from '../../images/icons/seta-baixo-cinza.png';
 import { BASE_URL, TOKEN_NAME } from '../../constants/url';
+import { StyledContent } from '../postsCard/styled';
 export const CommentsCard = ({ comment, fetchComments }) => {
   const url = `${BASE_URL}/comments/${comment.commentId}/like`;
   const [isLoading, setIsLoading] = useState(false); 
@@ -35,12 +36,12 @@ export const CommentsCard = ({ comment, fetchComments }) => {
   return (
     <PostContainer>
       <StyledP>Enviado por: {comment.nickName}</StyledP>
-      <Styledh1>{comment.commentContent}</Styledh1>
+      <StyledContent>{comment.commentContent}</StyledContent>
       <LikeContainer>
         <button onClick={() => handleLikeDislikeClick(true)} disabled={isLoading}>
           <img src={LikeIcon} width="16" height="16" alt="Seta para cima" />
         </button>
-       <StyledSpan style={{ padding: '5px' }}>{comment.likes - comment.dislikes}</StyledSpan> 
+       <StyledSpan>{comment.likes - comment.dislikes}</StyledSpan> 
         <button onClick={() => handleLikeDislikeClick(false)} disabled={isLoading}>
           <img src={DislikeIcon} width="16" height="16" alt="Seta para baixo" />
         </button>

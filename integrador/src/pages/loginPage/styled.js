@@ -27,6 +27,8 @@ export const StyledInput = styled.input`
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  background-color: white;
+
 `
 export const StyledInputContainer = styled.div`
     display: flex;
@@ -53,7 +55,7 @@ export const StyledForm = styled.form`
 `
 export const SignupButton = styled.button`
     width: 90%;
-    background: white;
+    background-color: white;
     color: orange;
     border-radius: 20px;
     border: 2px solid orange;
@@ -72,6 +74,8 @@ export const StyledButton = styled.button`
     border: 1.3px solid #fe9026;
     cursor: pointer;
     margin: 20px;
+    background-color: white;
+
 `
 
 export const StyledDiv = styled.div`

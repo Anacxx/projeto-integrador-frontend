@@ -15,16 +15,17 @@ export const Styledh1 = styled.h1`
     font-size: 1.2rem;
 `;
 export const LikeContainer = styled.span`
+    
     border: 1px solid #DDDDDD;
     width: 90%;
     border-radius: 18px;
-    padding: 8px;
-    margin: 5px auto;
-    max-width: 500px;
-    
-    span {
-        margin: 15px;
-        font-size: 16px; /* Adicione um tamanho de fonte para o span */
+    padding: 7px;
+    cursor: pointer;
+    button {
+        padding: 5px;
+        border:none;
+        margin-top:10px;
+        background-color: transparent;
     }
 `;
 export const StyledP = styled.p`
@@ -35,6 +36,10 @@ export const StyledP = styled.p`
 `
 export const StyledSpan = styled.span`
     font-family: sans-serif;
-    font-size: 0.2rem;
+    padding: 15px;
+    margin-left:7px;
+    margin-right: 7px;
+    font-size: 0.9rem;
+    font-weight: bold;
     color:#6F6F6F;
 `

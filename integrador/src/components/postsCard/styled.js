@@ -1,40 +1,53 @@
 import styled from 'styled-components'
 export const PostContainer = styled.div`
-    border: 1px solid #e0e0e0;
-    background-color: #fbfbfb;
+    background-color: #f5f5f5;
     width: 90%;
     border-radius: 15px;
     padding: 10px;
     margin: 15px auto;
     max-width: 500px;
+    border: 1px solid #eeeeee;
 `;
-export const Styledh1 = styled.h1`
+export const StyledContent = styled.p`
     font-family: 'IBM Plex Sans', sans-serif;
-    padding: 10px 0px;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
+    max-width: 100%;
+    word-wrap: break-word;
+    padding: 10px 0px 10px 0px;
+
 `;
 export const LikeContainer = styled.span`
     border: 1px solid #DDDDDD;
     width: 90%;
     border-radius: 18px;
-    padding: 8px;
-    margin: 5px auto;
-    max-width: 500px;
-    margin-left: 10px;
+    padding: 7px;
+    margin-right: 10px;
     cursor: pointer;
-    span {
-        margin: 15px;
-        font-size: 16px; /* Adicione um tamanho de fonte para o span */
+    button {
+        border:none;
+        margin:10px;
     }
+    
+
 `;
 export const StyledP = styled.p`
     font-family: 'IBM Plex Sans', sans-serif;
     color:#a4a4a4;
     font-size: 0.8rem;
-
 `
 export const StyledSpan = styled.span`
     font-family: sans-serif;
-    font-size: 0.2rem;
+    padding: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color:#6F6F6F;
+`
+export const CommentsButton = styled.button`
+   border: 1px solid #DDDDDD;
+   font-weight: bold;
+   font-size:0.9rem;
+    border-radius: 18px;
+    padding: 6px;
+    cursor: pointer;
     color:#6F6F6F;
 `

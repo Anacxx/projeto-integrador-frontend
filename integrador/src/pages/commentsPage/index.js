@@ -101,7 +101,8 @@ export const CommentsPage = () => {
     <div>
         <>
           <Header onClick={logout} buttonName='logout' />
-          <PostsCard key={post.id} post={post} fetchPost={fetchPost} />
+          <PostsCard key={post.id} post={post} fetchPost={fetchPost} onCardClick={() => {
+            navigate(`/posts/${post.id}`);}} />
           <div>
           <StyledTextArea
             value={newComment}

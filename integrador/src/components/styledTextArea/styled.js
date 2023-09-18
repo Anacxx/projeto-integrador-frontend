@@ -12,9 +12,10 @@ export const PostAreaContainer = styled.div`
 `;
 
 export const CustomTextArea = styled.textarea`
-
     background-color: #ededed;
     width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
     border: none;
     border-radius: 15px;
     padding: 10px;

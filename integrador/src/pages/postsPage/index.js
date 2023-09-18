@@ -72,7 +72,6 @@ export const PostsPage = () => {
         <section>
             {posts.slice().reverse().map((post) => {
                return <PostsCard key = {post.id} post = {post} onCardClick={() => {
-                // Navegue para a página de comentários com o post selecionado
                 navigate(`/posts/${post.id}`);
               }}/>
             })

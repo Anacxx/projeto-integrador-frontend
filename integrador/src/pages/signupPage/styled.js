@@ -44,6 +44,7 @@ export const StyledLabel = styled.label`
     padding-bottom: 15px;
     padding-left: 20px;
     padding-right: 20px;
+
 `
 
 export const InputCheckbox = styled.input`

@@ -9,10 +9,9 @@ const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-  }
-  body {
     font-family: 'IBM Plex Sans', sans-serif;
   }
+
 `
 function App() {
 
