@@ -35,11 +35,6 @@ export const PostsCard = ({ post, onCardClick,fetchPost }) => {
       setIsLoading(false); 
     }
   }
-
-  const redirectToPage = () => {
-    onCardClick(post);
-  };
-
   return (
     <PostContainer>
       <StyledP>Enviado por: {post.creatorNick_name}</StyledP>
@@ -53,7 +48,7 @@ export const PostsCard = ({ post, onCardClick,fetchPost }) => {
           <img src={DislikeIcon} width="16" height="16" alt="Seta para baixo" />
         </button>
       </LikeContainer>
-      <CommentsButton onClick={redirectToPage}>
+      <CommentsButton onClick={onCardClick}>
        <img src={CommentsIcon} width="16" height="16" alt="Comentários" /> &nbsp; {post.comments}
       </CommentsButton>
     </PostContainer>

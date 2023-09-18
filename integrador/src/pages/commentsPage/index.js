@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { BASE_URL, TOKEN_NAME } from '../../constants/url';
-import { PostsCard, CommentsCard, StyledTextArea } from '../../components'; // Certifique-se de importar o componente de comentário
+import { PostsCard, CommentsCard, StyledTextArea } from '../../components'; 
 import Header from '../../components/header';
 import { goToLoginPage } from '../../routes/coordinator';
 
@@ -16,15 +16,13 @@ export const CommentsPage = () => {
   const [post, setPost] = useState([]);
   const [isloading, setIsLoading] = useState(true);
   const [error, setError] = useState("");
-  const [newComment, setNewComment] = useState(""); // Renomeie para newComment
-  const [comments, setComments] = useState([]); // Estado para armazenar os comentários
-  //Nesse caso o useEffect irá renderizar o post cada vez que id for modificado.
-//Se o [] tivesse vazio a tela iria renderizar uma vez, quando o componente for montado
+  const [newComment, setNewComment] = useState(""); 
+  const [comments, setComments] = useState([]);
   useEffect(() => {
     // renderiza o post.
     fetchPost();
     fetchComments()
-  }, []);
+  }, [id]);
       const fetchPost = async () => {
       try {
         const token = window.localStorage.getItem(TOKEN_NAME);
@@ -101,8 +99,7 @@ export const CommentsPage = () => {
     <div>
         <>
           <Header onClick={logout} buttonName='logout' />
-          <PostsCard key={post.id} post={post} fetchPost={fetchPost} onCardClick={() => {
-            navigate(`/posts/${post.id}`);}} />
+          <PostsCard key={post.id} post={post} fetchPost={fetchPost} onClickCard={() => {}} />
           <div>
           <StyledTextArea
             value={newComment}

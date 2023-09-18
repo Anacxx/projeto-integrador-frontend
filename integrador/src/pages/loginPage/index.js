@@ -9,11 +9,12 @@ import {
   StyledInputContainer,
   StyledForm,
   StyledButton,
-  StyledDiv
+  StyledDiv,
+  GradientLineLogin
 } from "./styled";
 import { BASE_URL, TOKEN_NAME } from "../../constants/url";
 import { goToPostsPage, goToSignupPage } from "../../routes/coordinator";
-import { DegradeeButton, GradientLine } from "../../components";
+import { DegradeeButton } from "../../components";
 
 export const LoginPage = () => {
   const navigate = useNavigate();
@@ -79,7 +80,7 @@ export const LoginPage = () => {
           />
         </StyledInputContainer>
         <DegradeeButton disabled={isLoading}>Continuar</DegradeeButton>
-        <GradientLine />
+        <GradientLineLogin />
       </StyledForm>
       <StyledDiv>
         <StyledButton onClick={() => goToSignupPage(navigate)}>Crie uma conta!</StyledButton>

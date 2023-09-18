@@ -94,8 +94,8 @@ export const SignupPage = () => {
         required
         />
         <Syledp>
-          Ao continuar, você concorda com nosso <a onClick={() => goToUserAgreementPage(navigate)} style={{ color: '#5092cf', cursor: 'pointer'  }}>Contrato de usuário</a>  e nossa{' '}
-          <a onClick={() => goToUserAgreementPage(navigate)} style={{ color: '#5092cf', cursor: 'pointer'  }}>Política de privacidade</a>
+          Ao continuar, você concorda com nosso <a href="/agreement" onClick={() => goToUserAgreementPage(navigate)} style={{ color: '#5092cf', cursor: 'pointer'  }}>Contrato de usuário</a>  e nossa{' '}
+          <a href="/agreement" onClick={() => goToUserAgreementPage(navigate)} style={{ color: '#5092cf', cursor: 'pointer'  }}>Política de privacidade</a>
         </Syledp>
         <StyledLabel>
           <InputCheckbox type="checkbox" checked={agreed} onChange={handleAgreeChange} />

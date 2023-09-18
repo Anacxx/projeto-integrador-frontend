@@ -84,3 +84,9 @@ export const StyledDiv = styled.div`
     max-width: 500px;
     overflow: hidden; 
 `
+export const GradientLineLogin = styled.div`
+    width: 90%;
+    height: 1.8px;
+    background: linear-gradient(to right, #FF6489, #F9B24E);
+    margin-top: 20px;
+`
