@@ -48,5 +48,6 @@ Acesse o aplicativo no seu navegador em http://localhost:3000.
 
 Nota: Certifique-se de que a API necessária para este projeto está funcionando e configurada corretamente. Consulte a documentação da API para obter detalhes sobre como configurá-la e usá-la em conjunto com este projeto.
 
+Repositório Back end: https://github.com/Anacxx/projeto-integrador-backend
 
-Surge: projeto-integrador-labeddit11.surge.sh
+Surge: projeto-integrador-labeddit-front.surge.sh
